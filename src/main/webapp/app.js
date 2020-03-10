@@ -9,6 +9,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, '../webapp')));
 
 app.get('/',function(req,res){
+	console.log(1)
 	res.render('index')
 })
 
