@@ -93,8 +93,7 @@ LocalFile.prototype.saveAs = function(title, success, error)
  */
 LocalFile.prototype.saveFile = function(title, revision, success, error)
 {
-	this.title = title;
-
+    this.title = title;
 	// Updates data after changing file name
 	this.updateFileData();
 	var data = this.getData();
@@ -104,13 +103,32 @@ LocalFile.prototype.saveFile = function(title, revision, success, error)
 	{
 		if (this.ui.isOfflineApp() || this.ui.isLocalFileSave())
 		{
-			this.ui.doSaveLocalFile(data, title, (binary) ?
-				'image/png' : 'text/xml', binary);
+			console.log('取消文件下载功能')
+            // 新建的graph 需要获取文件名
+            // if(localStorage.flag === 'ctreate'){
+                var  pathStr=''
+                if(title.indexOf('xml') > 0){
+                    pathStr = title
+                }else {
+                    pathStr = title.split('.')[0]+'.xml'
+                }
+               var catchPath =[]
+                if(localStorage.catchPath){
+                     catchPath=JSON.parse(localStorage.catchPath)
+                }
+                var basepath=catchPath.join('/') === ''?'':'/'+catchPath.join('/')
+                var path=basepath+'/'+pathStr
+                sessionStorage.setItem('filePath',path)
+            // }
+            // this.ui.doSaveLocalFile(data, title, (binary) ?
+				// 'image/png' : 'text/xml', binary);
 		}
 		else
 		{
+
 			if (data.length < MAX_REQUEST_SIZE)
 			{
+
 				var dot = title.lastIndexOf('.');
 				var format = (dot > 0) ? title.substring(dot + 1) : 'xml';
 
@@ -123,6 +141,7 @@ LocalFile.prototype.saveFile = function(title, revision, success, error)
 			}
 			else
 			{
+
 				this.ui.handleError({message: mxResources.get('drawingTooLarge')}, mxResources.get('error'), mxUtils.bind(this, function()
 				{
 					mxUtils.popup(data);
@@ -141,13 +160,16 @@ LocalFile.prototype.saveFile = function(title, revision, success, error)
 	
 	if (binary)
 	{
-		this.ui.getEmbeddedPng(mxUtils.bind(this, function(imageData)
+
+		alert(12)
+	    this.ui.getEmbeddedPng(mxUtils.bind(this, function(imageData)
 		{
 			doSave(imageData);
 		}), error, (this.ui.getCurrentFile() != this) ? this.getData() : null);
 	}
 	else
 	{
+
 		doSave(data);
 	}
 };
@@ -176,5 +198,13 @@ LocalFile.prototype.rename = function(title, success, error)
 LocalFile.prototype.open = function()
 {
 	this.ui.setFileData(this.getData());
-	this.installListeners();
+	
+	// Only used to update the status when the file changes
+	this.changeListener = mxUtils.bind(this, function(sender, eventObject)
+	{
+		this.setModified(true);
+		this.addUnsavedStatus();
+	});
+	
+	this.ui.editor.graph.model.addListener(mxEvent.CHANGE, this.changeListener);
 };

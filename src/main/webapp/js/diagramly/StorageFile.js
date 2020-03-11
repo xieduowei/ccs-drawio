@@ -10,6 +10,7 @@
  * @param {number} x X-coordinate of the point.
  * @param {number} y Y-coordinate of the point.
  */
+
 StorageFile = function(ui, data, title)
 {
 	DrawioFile.call(this, ui, data);
@@ -68,6 +69,7 @@ StorageFile.prototype.getHash = function()
  */
 StorageFile.prototype.getTitle = function()
 {
+
 	return this.title;
 };
 
@@ -90,7 +92,8 @@ StorageFile.prototype.isRenamable = function()
  */
 StorageFile.prototype.save = function(revision, success, error)
 {
-	this.saveAs(this.getTitle(), success, error);
+
+    this.saveAs(this.getTitle(), success, error);
 };
 
 /**
@@ -101,7 +104,8 @@ StorageFile.prototype.save = function(revision, success, error)
  */
 StorageFile.prototype.saveAs = function(title, success, error)
 {
-	DrawioFile.prototype.save.apply(this, arguments);
+
+    DrawioFile.prototype.save.apply(this, arguments);
 	this.saveFile(title, false, success, error);
 };
 
@@ -113,7 +117,8 @@ StorageFile.prototype.saveAs = function(title, success, error)
  */
 StorageFile.prototype.saveFile = function(title, revision, success, error)
 {
-	if (!this.isEditable())
+
+    if (!this.isEditable())
 	{
 		if (success != null)
 		{
@@ -229,17 +234,6 @@ StorageFile.prototype.open = function()
 
 	// Immediately creates the storage entry
 	this.saveFile(this.getTitle());
-};
-
-/**
- * Adds the listener for automatically saving the diagram for local changes.
- */
-StorageFile.prototype.getLatestVersion = function(success, error)
-{
-	this.ui.getLocalData(this.title, mxUtils.bind(this, function(data)
-	{
-		success(new StorageFile(this.ui, data, this.title));
-	}));
 };
 
 /**

@@ -7,66 +7,39 @@ Draw.loadPlugin(function(ui) {
 	var enabled = true;
 	var counter = 0;
 	
-	var graphViewResetValidationState = graph.view.resetValidationState;
-	
-	graph.view.resetValidationState = function()
+	// Creates the shape for the shape number and puts it into the draw pane
+	var redrawShape = graph.cellRenderer.redrawShape;
+	graph.cellRenderer.redrawShape = function(state, force, rendering)
 	{
-		graphViewResetValidationState.apply(this, arguments);
-		this.numberCounter = 0;
-	};
-	
-	var graphViewValidateCellState = graph.view.validateCellState;
-	
-	graph.view.validateCellState = function(cell, recurse)
-	{
-		var state = graphViewValidateCellState.apply(this, arguments);
-		recurse = (recurse != null) ? recurse : true;
-		
-		if (recurse && state != null && graph.model.isVertex(state.cell) &&
-			mxUtils.getValue(state.style, 'numbered', 1) == 1)
-		{
-			this.numberCounter++;
-			this.redrawNumberShape(state);
-		}
-	};
-	
-	graph.view.redrawNumberShape = function(state)
-	{
-		var numbered = mxUtils.getValue(state.style, 'numbered', 1) == 1;
-		var value = '<div style="padding:2px;border:1px solid gray;background:yellow;border-radius:2px;">' +
-			(this.numberCounter) + '</div>';
+		var result = redrawShape.apply(this, arguments);
 
-		if (enabled && numbered && graph.model.isVertex(state.cell) &&
-			state.shape != null && state.secondLabel == null)
+		if (result && enabled && graph.model.isVertex(state.cell))
 		{
-			state.secondLabel = new mxText(value, new mxRectangle(),
-					mxConstants.ALIGN_LEFT, mxConstants.ALIGN_BOTTOM);
+			if (state.shape != null && state.secondLabel == null)
+			{
+				var value = '<div style="padding:2px;border:1px solid gray;background:yellow;border-radius:2px;">' + (++counter) + '</div>';
+				state.secondLabel = new mxText(value, new mxRectangle(),
+						mxConstants.ALIGN_LEFT, mxConstants.ALIGN_BOTTOM);
 
-			// Styles the label
-			state.secondLabel.size = 12;
-			state.secondLabel.dialect = mxConstants.DIALECT_STRICTHTML;
-			graph.cellRenderer.initializeLabel(state, state.secondLabel);
+				// Styles the label
+				state.secondLabel.size = 12;
+				state.secondLabel.dialect = state.shape.dialect;
+				state.secondLabel.dialect = mxConstants.DIALECT_STRICTHTML;
+				graph.cellRenderer.initializeLabel(state, state.secondLabel);
+			}
 		}
 		
 		if (state.secondLabel != null)
 		{
-			if (!numbered)
-			{
-				state.secondLabel.destroy();
-				state.secondLabel = null;
-			}
-			else
-			{
-				var scale = graph.getView().getScale();
-				var bounds = new mxRectangle(state.x + state.width - 4 * scale, state.y + 4 * scale, 0, 0);
-				state.secondLabel.value = value;
-				state.secondLabel.state = state;
-				state.secondLabel.scale = scale;
-				state.secondLabel.bounds = bounds;
-				state.secondLabel.redraw();
-				console.log('redraw', state, this.numberCounter, value);
-			}	
+			var scale = graph.getView().getScale();
+			var bounds = new mxRectangle(state.x + state.width - 4 * scale, state.y + 4 * scale, 0, 0);
+			state.secondLabel.state = state;
+			state.secondLabel.scale = scale;
+			state.secondLabel.bounds = bounds;
+			state.secondLabel.redraw();
 		}
+		
+		return result;
 	};
 
 	// Destroys the shape number
@@ -85,6 +58,13 @@ Draw.loadPlugin(function(ui) {
 	graph.cellRenderer.getShapesForState = function(state)
 	{
 		return [state.shape, state.text, state.secondLabel, state.control];
+	};
+	
+	var validate = graph.view.validate;
+	graph.view.validate = function()
+	{
+		counter = 0;
+		validate.apply(this, arguments);
 	};
 	
 	// Extends View menu

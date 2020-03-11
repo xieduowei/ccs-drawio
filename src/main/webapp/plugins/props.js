@@ -18,7 +18,7 @@ Draw.loadPlugin(function(ui) {
 	var graph = ui.editor.graph;
 	
 	// Made for chromeless mode
-	if (!ui.editor.isChromelessView())
+	if (!ui.editor.chromeless)
 	{
 		div.style.top = '100px';
 		div.style.right = '260px';
@@ -47,11 +47,11 @@ Draw.loadPlugin(function(ui) {
 		else
 		{
 			var attrs = (cell.value != null) ? cell.value.attributes : null;
-			highlight.highlight(graph.view.getState(cell));
 	
 			if (attrs != null)
 			{
 				var ignored = ['label', 'tooltip', 'placeholders'];
+				highlight.highlight(graph.view.getState(cell));
 				var label = graph.sanitizeHtml(graph.getLabel(cell));
 				
 				if (label != null && label.length > 0)
@@ -71,19 +71,6 @@ Draw.loadPlugin(function(ui) {
 						div.innerHTML += '<h2>' + graph.sanitizeHtml(attrs[i].nodeName) + '</h2>' +
 							'<p>' + graph.sanitizeHtml(attrs[i].nodeValue) + '</p>';
 					}
-				}
-			}
-			else
-			{
-				var label = graph.convertValueToString(cell);
-				
-				if (label != null)
-				{
-					div.innerHTML = '<h1>' + graph.sanitizeHtml(label) + '</h1>';
-				}
-				else
-				{
-					div.innerHTML = '';
 				}
 			}
 		}

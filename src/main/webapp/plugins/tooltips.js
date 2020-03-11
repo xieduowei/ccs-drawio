@@ -28,9 +28,9 @@ Draw.loadPlugin(function(ui) {
 		{
 			graph.removeCellOverlays(cell);
 		}
-	};
+	}
 	
-	function refresh()
+	graph.addListener(mxEvent.SIZE, function()
 	{
 		var cells = graph.model.cells;
 		
@@ -38,8 +38,5 @@ Draw.loadPlugin(function(ui) {
 		{
 			updateOverlays(cells[id]);
 		}
-	};
-	
-	graph.addListener(mxEvent.SIZE, refresh);
-	refresh();
+	});
 });

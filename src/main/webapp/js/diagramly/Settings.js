@@ -10,7 +10,7 @@ var mxSettings =
 	/**
 	 * Defines current version of settings.
 	 */
-	currentVersion: 18,
+	currentVersion: 16,
 	
 	defaultFormatWidth: (screen.width < 600) ? '0' : '240',
 	
@@ -41,20 +41,13 @@ var mxSettings =
 	{
 		mxSettings.settings.showStartScreen = showStartScreen;
 	},
-	getGridColor: function(darkMode)
+	getGridColor: function()
 	{
-		return (darkMode) ? mxSettings.settings.darkGridColor : mxSettings.settings.gridColor;
+		return mxSettings.settings.gridColor;
 	},
-	setGridColor: function(gridColor, darkMode)
+	setGridColor: function(gridColor)
 	{
-		if (darkMode)
-		{
-			mxSettings.settings.darkGridColor = gridColor;
-		}
-		else
-		{
-			mxSettings.settings.gridColor = gridColor;
-		}
+		mxSettings.settings.gridColor = gridColor;
 	},
 	getAutosave: function()
 	{
@@ -79,14 +72,6 @@ var mxSettings =
 	setOpenCounter: function(openCounter)
 	{
 		mxSettings.settings.openCounter = openCounter;
-	},
-	setCustomFonts: function(fonts)
-	{
-		mxSettings.settings.customFonts = fonts;
-	},
-	getCustomFonts: function(fonts)
-	{
-		return mxSettings.settings.customFonts;
 	},
 	getLibraries: function()
 	{
@@ -151,6 +136,22 @@ var mxSettings =
 	{
 		mxSettings.settings.formatWidth = formatWidth;
 	},
+	getCurrentEdgeStyle: function()
+	{
+		return mxSettings.settings.currentEdgeStyle;
+	},
+	setCurrentEdgeStyle: function(value)
+	{
+		mxSettings.settings.currentEdgeStyle = value;
+	},
+	getCurrentVertexStyle: function()
+	{
+		return mxSettings.settings.currentVertexStyle;
+	},
+	setCurrentVertexStyle: function(value)
+	{
+		mxSettings.settings.currentVertexStyle = value;
+	},
 	isCreateTarget: function()
 	{
 		return mxSettings.settings.createTarget;
@@ -167,48 +168,30 @@ var mxSettings =
 	{
 		mxSettings.settings.pageFormat = value;
 	},
-	getUnit: function()
-	{
-		return mxSettings.settings.unit || mxConstants.POINTS;
-	},
-	setUnit: function(value)
-	{
-		mxSettings.settings.unit = value;
-	},
-	isRulerOn: function()
-	{
-		return mxSettings.settings.isRulerOn;
-	},
-	setRulerOn: function(value)
-	{
-		mxSettings.settings.isRulerOn = value;
-	},
 	init: function()
 	{
 		mxSettings.settings = 
 		{
-			language: '',
+			language: 'zh',
 			configVersion: Editor.configVersion,
-			customFonts: [],
 			libraries: Sidebar.prototype.defaultEntries,
 			customLibraries: Editor.defaultCustomLibraries,
 			plugins: [],
 			recentColors: [],
 			formatWidth: mxSettings.defaultFormatWidth,
+			currentEdgeStyle: Graph.prototype.defaultEdgeStyle,
+			currentVertexStyle: Graph.prototype.defaultVertexStyle,
 			createTarget: false,
 			pageFormat: mxGraph.prototype.pageFormat,
 			search: true,
 			showStartScreen: true,
-			gridColor: mxGraphView.prototype.defaultGridColor,
-			darkGridColor: mxGraphView.prototype.defaultDarkGridColor,
-			autosave: true,
+			gridColor: mxGraphView.prototype.gridColor,
+			autosave: !EditorUi.isElectronApp,
 			resizeImages: null,
 			openCounter: 0,
 			version: mxSettings.currentVersion,
 			// Only defined and true for new settings which haven't been saved
-			isNew: true,
-			unit: mxConstants.POINTS,
-			isRulerOn: true
+			isNew: true
 		};
 	},
 	save: function()
@@ -219,7 +202,9 @@ var mxSettings =
 			{
 				delete mxSettings.settings.isNew;
 				mxSettings.settings.version = mxSettings.currentVersion;
+                mxSettings.settings.language = 'zh'
 				localStorage.setItem(mxSettings.key, JSON.stringify(mxSettings.settings));
+
 			}
 			catch (e)
 			{
@@ -241,12 +226,11 @@ var mxSettings =
 	},
 	parse: function(value)
 	{
-		if (value != null)
+	    if (value != null)
 		{
 			var temp = JSON.parse(value);
 			
-			if ((Editor.config != null && Editor.config.override) ||
-				temp.configVersion != Editor.configVersion)
+			if (temp.configVersion != Editor.configVersion)
 			{
 				mxSettings.settings = null;
 			}
@@ -262,11 +246,6 @@ var mxSettings =
 				if (mxSettings.settings.recentColors == null)
 				{
 					mxSettings.settings.recentColors = [];
-				}
-
-				if (mxSettings.settings.customFonts == null)
-				{
-					mxSettings.settings.customFonts = [];
 				}
 				
 				if (mxSettings.settings.libraries == null)
@@ -294,6 +273,22 @@ var mxSettings =
 					delete mxSettings.settings.lastAlert;
 				}
 				
+				if (mxSettings.settings.currentEdgeStyle == null)
+				{
+					mxSettings.settings.currentEdgeStyle = Graph.prototype.defaultEdgeStyle;
+				}
+				else if (mxSettings.settings.version <= 10)
+				{
+					// Adds new defaults for jetty size and loop routing
+					mxSettings.settings.currentEdgeStyle['orthogonalLoop'] = 1;
+					mxSettings.settings.currentEdgeStyle['jettySize'] = 'auto';
+				}
+				
+				if (mxSettings.settings.currentVertexStyle == null)
+				{
+					mxSettings.settings.currentVertexStyle = Graph.prototype.defaultVertexStyle;
+				}
+				
 				if (mxSettings.settings.createTarget == null)
 				{
 					mxSettings.settings.createTarget = false;
@@ -316,12 +311,7 @@ var mxSettings =
 				
 				if (mxSettings.settings.gridColor == null)
 				{
-					mxSettings.settings.gridColor = mxGraphView.prototype.defaultGridColor;
-				}
-
-				if (mxSettings.settings.darkGridColor == null)
-				{
-					mxSettings.settings.darkGridColor = mxGraphView.prototype.defaultDarkGridColor;
+					mxSettings.settings.gridColor = mxGraphView.prototype.gridColor;
 				}
 				
 				if (mxSettings.settings.autosave == null)
@@ -358,6 +348,7 @@ var mxSettings =
  */
 if (typeof(mxLoadSettings) == 'undefined' || mxLoadSettings)
 {
-	// Loads initial content
+
+    // Loads initial content
 	mxSettings.load();
 }

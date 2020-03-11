@@ -50,16 +50,7 @@
 				messageStyle: 'none',
 				AuthorInit: function ()
 				{
-					MathJax.Hub.Config({
-						jax: ['input/TeX', 'input/MathML', 'input/AsciiMath', 'output/HTML-CSS'],
-						extensions: ['tex2jax.js', 'mml2jax.js', 'asciimath2jax.js'],
-						'HTML-CSS': {
-							imageFont: null
-						},
-						TeX: {
-						  extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js']
-						}
-					});
+					MathJax.Hub.Config({"HTML-CSS":{availableFonts:[],webFont:"STIX-Web",imageFont:null}});
 					
 					MathJax.Hub.Register.StartupHook('Begin', function()
 					{
@@ -73,7 +64,7 @@
 
 			var script = document.createElement('script');
 			script.type = 'text/javascript';
-			script.src = 'https://www.draw.io/math/MathJax.js?config=TeX-MML-AM_HTMLorMML';
+			script.src = './MathJax.js?config=TeX-MML-AM_HTMLorMML';
 			document.getElementsByTagName('head')[0].appendChild(script);
 		}
 	};
@@ -170,7 +161,7 @@
 				}
 				else
 				{
-					xml = Graph.decompress(xml);
+					xml = graph.decompress(xml);
 				}
 				
 				var xmlDocument = mxUtils.parseXml(xml);
@@ -185,7 +176,7 @@
 					if (diagrams.length > 0)
 					{
 						xml = mxUtils.getTextContent(diagrams[0]);
-						xml = Graph.decompress(xml);
+						xml = graph.decompress(xml);
 						xmlDocument = mxUtils.parseXml(xml);
 					}
 				}
@@ -219,10 +210,6 @@
 							else if (name == 'pagenumber')
 							{
 								return 1;
-							}
-							else if (name == 'pagecount')
-							{
-								return diagrams.length;
 							}
 							
 							return graphGetGlobalVariable.apply(this, arguments);
@@ -540,7 +527,7 @@
 							    				if (divs2.length > 0)
 							    				{
 							    					var data = mxUtils.getTextContent(divs2[0]);
-							    	        		data = Graph.decompress(data);
+							    	        		data = graph.decompress(data);
 							    	        		
 							    	        		if (data.length > 0)
 							    	        		{
@@ -576,7 +563,7 @@
 							    			
 							    			if (diagrams.length > 0)
 							    			{
-							    				data = Graph.decompress(mxUtils.getTextContent(diagrams[0]));
+							    				data = graph.decompress(mxUtils.getTextContent(diagrams[0]));
 							    				newDocument = mxUtils.parseXml(data);
 							    			}
 							    		}

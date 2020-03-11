@@ -5,7 +5,7 @@
 	 * https://docs.google.com/spreadsheets/d/1sAL1zn-UtmJtKPH4cLApGjRX-TRSJa5dYdfZ9NKYfRs
 	 * Maps package and stencil names to additional tags.
 	 */
-	Sidebar.prototype.tagIndex = '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';
+	Sidebar.prototype.tagIndex = '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';
 
 	/**
 	 * To update this, go to https://test.draw.io/?dev=1&test=1&drawdev=1&demo=1&createindex=1 and convert
@@ -21,7 +21,7 @@
 	/**
 	 * Aliases for IDs in the libs parameter.
 	 */
-	Sidebar.prototype.libAliases = {'aws2': 'aws3', 'gcp' : 'gcp2'};
+	Sidebar.prototype.libAliases = {'aws2': 'aws3'};
 	
 	/**
 	 * 
@@ -29,74 +29,92 @@
 	Sidebar.prototype.defaultEntries = 'general;uml;er;bpmn;flowchart;basic;arrows2';
 	
 	/**
-	 * Library definitions 
+	 * 
 	 */
 	Sidebar.prototype.signs = ['Animals', 'Food', 'Healthcare', 'Nature', 'People', 'Safety', 'Science', 'Sports', 'Tech', 'Transportation', 'Travel'];
 
-	Sidebar.prototype.ibm = ['Analytics', 'Applications', 'Blockchain', 'Data', 'DevOps', 'Infrastructure', 'Management', 'Miscellaneous', 'Security', 'Social', 'Users', 'VPC'];
+	/**
+	 * 
+	 */
+	Sidebar.prototype.ibm = ['Analytics', 'Applications', 'Blockchain', 'Data', 'DevOps', 'Infrastructure', 'Management', 'Miscellaneous', 'Security', 'Social', 'Users'];
 
-	Sidebar.prototype.allied_telesis = ['Buildings', 'Computer and Terminals', 'Media Converters', 'Security', 'Storage', 'Switch', 'Wireless'];
-
+	/**
+	 * 
+	 */
 	Sidebar.prototype.gcp = ['Cards', 'Big Data', 'Compute', 'Developer Tools', 'Extras', 'Identity and Security', 'Machine Learning', 'Management Tools', 'Networking', 'Storage Databases'];
-	
-	Sidebar.prototype.gcp2 = ['Paths', 'Zones', 'Service Cards', 'Compute', 'API Management', 'Security', 'Data Analytics', 'Data Transfer', 'Cloud AI', 'Internet of Things', 'Databases', 'Storage', 'Management Tools', 'Networking', 'Developer Tools', 'Expanded Product Cards', 'User Device Cards', 'Product Cards', 'General Icons', 'Icons AI Machine Learning', 'Icons Compute', 'Icons Data Analytics', 'Icons Management Tools', 'Icons Networking', 'Icons Developer Tools', 'Icons API Management', 'Icons Internet of Things', 'Icons Databases', 'Icons Storage', 'Icons Security', 'Icons Migration', 'Icons Hybrid and Multi Cloud'];
-	
+	/**
+	 *
+	 */
 	Sidebar.prototype.rack = ['General', 'APC', 'Cisco', 'Dell', 'F5', 'HP', 'IBM', 'Oracle'];
 
+	/**
+	 *
+	 */
 	Sidebar.prototype.pids = ['Agitators', 'Apparatus Elements', 'Centrifuges', 'Compressors', 'Compressors ISO', 'Crushers Grinding', 
                               'Driers', 'Engines', 'Feeders', 'Filters', 'Fittings', 'Flow Sensors', 'Heat Exchangers', 'Instruments', 'Misc',
                               'Mixers', 'Piping', 'Pumps', 'Pumps DIN', 'Pumps ISO', 'Separators', 'Shaping Machines', 'Valves', 'Vessels'];
 
+	/**
+	 *
+	 */
 	Sidebar.prototype.cisco = ['Buildings', 'Computers and Peripherals', 'Controllers and Modules', 'Directors', 'Hubs and Gateways', 'Misc',
 	                           'Modems and Phones', 'People', 'Routers', 'Security', 'Servers', 'Storage', 'Switches', 'Wireless'];
 	
+	/**
+	 *
+	 */
 	Sidebar.prototype.cisco_safe = ['Architecture', 'Capability', 'Design', 'Threat'];
 	
+	/**
+	 *
+	 */
 	Sidebar.prototype.sysml = ['Model Elements', 'Blocks', 'Ports and Flows', 'Constraint Blocks', 'Activities', 'Interactions', 'State Machines', 
 	                           'Use Cases', 'Allocations', 'Requirements', 'Profiles', 'Stereotypes'];
 
+	/**
+	 *
+	 */
 	Sidebar.prototype.eip = ['Message Construction', 'Message Routing', 'Message Transformation', 'Messaging Channels', 'Messaging Endpoints', 
 	                         'Messaging Systems', 'System Management'];
 
+	/**
+	 *
+	 */
 	Sidebar.prototype.gmdl = ['Bottom Navigation', 'Bottom Sheets', 'Buttons', 'Cards', 'Chips', 'Dialogs', 'Dividers', 'Grid Lists', 'Icons', 'Lists', 'Menus', 'Misc', 'Pickers', 
 	                          'Selection Controls', 'Sliders', 'Steppers', 'Tabs', 'Text Fields'];
 
+	/**
+	 *
+	 */
 	Sidebar.prototype.aws2 = ['Analytics', 'Application Services', 'Compute', 'Database', 'Developer Tools', 'Enterprise Applications', 'Game Development', 'General', 'Internet of Things',  
 	                          'Management Tools', 'Mobile Services', 'Networking', 'On-Demand Workforce', 'SDKs', 'Security and Identity', 'Storage and Content Delivery', 'Groups'];
 
+	/**
+	 *
+	 */
 	Sidebar.prototype.aws3 = ['Analytics', 'Application Services', 'Artificial Intelligence', 'Business Productivity', 'Compute', 'Contact Center', 'Database', 'Desktop and App Streaming', 'Developer Tools', 
 	                          'Game Development', 'General', 'Groups', 'Internet of Things',  
 	                          'Management Tools', 'Messaging', 'Migration', 'Mobile Services', 'Networking and Content Delivery', 'On Demand Workforce', 'SDKs', 'Security Identity and Compliance', 'Storage'];
 	
-	Sidebar.prototype.aws4b = ['Arrows', 'General Resources', 'Illustrations', 'Groups Light', 'Groups Dark', 'Analytics', 'Application Integration', 'AR VR', 'Cost Management', 'Business Productivity', 'Compute', 'Customer Engagement',
-							  'Database', 'Desktop App Streaming', 'Developer Tools', 'Game Development', 'Internet of Things', 'IoT Things', 'IoT Resources', 'Machine Learning', 'Management Tools',
-							  'Media Services', 'Migration', 'Mobile Services', 'Network Content Delivery', 'Security Identity Compliance', 'Storage'];
-	
-	Sidebar.prototype.aws4 = ['Arrows', 'General Resources', 'Illustrations', 'Groups', 'Analytics', 'Application Integration', 'AR VR', 'Cost Management', 'Blockchain', 
-							  'Business Applications', 'EC2 Instance Types', 'Compute', 'Customer Engagement',
-							  'Database', 'End User Computing', 'Developer Tools', 'Game Tech', 'Internet of Things', 'IoT Things', 'IoT Resources', 'Machine Learning', 'Management Governance',
-							  'Media Services', 'Migration Transfer', 'Mobile', 'Network Content Delivery', 'Robotics', 'Satellite', 'Security Identity Compliance', 'Storage'];
-
+	/**
+	 * 
+	 */
 	Sidebar.prototype.office = ['Clouds', 'Communications', 'Concepts', 'Databases', 'Devices', 'Security', 'Servers', 'Services', 'Sites', 'Users'];
 
-	Sidebar.prototype.veeam = ['Data Center', 'Misc', 'Software', 'Storage', 'UsersStatus', 'VASComponents', 'Backup Replication', 'Products', 'VMs and Tape', '2D', '3D'];
+	/**
+	 * 
+	 */
+	Sidebar.prototype.veeam = ['2D', '3D'];
 
+	/**
+	 * 
+	 */
 	Sidebar.prototype.archimate3 = ['Application', 'Business', 'Composite', 'Implementation and Migration', 'Motivation', 'Physical', 'Relationships', 'Strategy', 'Technology'];
 
-	Sidebar.prototype.electrical = ['LogicGates', 'Resistors', 'Capacitors', 'Inductors', 'SwitchesRelays', 'Diodes', 'Sources', 'Transistors', 'Misc', 'Audio', 'PlcLadder', 'Abstract', 'Optical', 'VacuumTubes', 'Waveforms', 'Instruments', 'RotMech', 'Transmission'];
-
 	/**
-	 * Description of custom libraries, see https://desk.draw.io/a/solutions/articles/16000058316
-	 */
-	Sidebar.prototype.customEntries = null;
-	
-	/**
-	 * Array of strings for the built-in libraries to be enabled in the more shapes dialog. Null means all,
-	 * empty array means none, possible keys are listed for the libs parameter at
 	 * 
-	 * https://desk.draw.io/support/solutions/articles/16000042546
 	 */
-	Sidebar.prototype.enabledLibraries = null;
+	Sidebar.prototype.electrical = ['LogicGates', 'Resistors', 'Capacitors', 'Inductors', 'SwitchesRelays', 'Diodes', 'Sources', 'Transistors', 'Misc', 'Audio', 'PlcLadder', 'Abstract', 'Optical', 'VacuumTubes', 'Waveforms', 'Instruments', 'RotMech', 'Transmission'];
 
 	/**
 	 *
@@ -104,15 +122,13 @@
 	Sidebar.prototype.configuration = [{id: 'general', libs: ['general', 'misc', 'advanced']}, {id: 'uml'}, {id: 'search'}, {id: 'er'},
 	                                   {id: 'ios', prefix: 'ios', libs: [''/*prefix is library*/, '7icons', '7ui']}, 
 	                                   {id: 'android', prefix: 'android', libs: [''/*prefix is library*/]}, {id: 'aws3d'},
-	                                   {id: 'flowchart'}, {id: 'basic'}, {id: 'infographic'}, {id: 'arrows'}, {id: 'arrows2'}, {id: 'lean_mapping'}, {id: 'citrix'}, {id: 'azure'}, {id: 'network'}, {id: 'vvd'}, 
-	                                   {id: 'sitemap'}, {id: 'dfd'},
-	                                   {id: 'mscae', prefix: 'mscae', libs: ['Companies', 'EnterpriseFlat', 'IntuneFlat', 'OMSFlat', 'System CenterFlat', 'AI and ML Service', 'Analytics Service', 'Compute Service', 'Compute Service VM', 'Container Service', 'Databases Service', 'DevOps Service', 'General Service', 'Identity Service', 'Integration Service', 'Internet of Things Service', 'Intune Service', 'Management and Governance Service', 'Management and Governance Service Media', 'Migrate Service', 'Mixed Reality Service', 'Mobile Service', 'Networking Service', 'Other Category Service', 'Security Service', 'Storage Service', 'Web Service']},
-	                                   {id: 'active_directory'},
+	                                   {id: 'flowchart'}, {id: 'basic'}, {id: 'arrows'}, {id: 'arrows2'}, {id: 'lean_mapping'}, {id: 'citrix'}, {id: 'azure'}, {id: 'network'}, {id: 'sitemap'},
+	                                   
+	                                   {id: 'mscae', prefix: 'mscae', libs: ['Cloud', 'Enterprise', 'General', 'General Symbols', 'Intune', 'OMS', 'OpsManager', 'Other', 'System Center', 'Virtual Machine', 'Deprecated', 'Cloud Color', 'Deprecated Color']},
+	                                   
 	                                   {id: 'bpmn', prefix: 'bpmn', libs: [''/*prefix is library*/, 'Gateways', 'Events']},
 	                                   {id: 'clipart', prefix: null, libs: ['computer', 'finance', 'clipart', 'networking', 'people', 'telco']},
 	                                   {id: 'ibm', prefix: 'ibm', libs: Sidebar.prototype.ibm},
-	                                   {id: 'allied_telesis', prefix: 'allied_telesis', libs: Sidebar.prototype.allied_telesis},
-	                                   {id: 'cumulus', libs: ['cumulus']},
 	                                   {id: 'eip', prefix: 'eip', libs: Sidebar.prototype.eip},
 	                                   {id: 'mockups', prefix: 'mockup', libs: ['Buttons', 'Containers', 'Forms', 'Graphics', 'Markup', 'Misc', 'Navigation', 'Text']},
 	                                   {id: 'pid2', prefix: 'pid2', libs: ['Agitators', 'Apparatus Elements', 'Centrifuges', 'Compressors', 'Compressors ISO', 'Crushers Grinding', 
@@ -120,14 +136,10 @@
 	                                        	                          'Mixers', 'Piping', 'Pumps', 'Pumps DIN', 'Pumps ISO', 'Separators', 'Shaping Machines', 'Valves', 'Vessels']},
            	                           {id: 'signs', prefix: 'signs', libs: Sidebar.prototype.signs},
            	                           {id: 'gcp', prefix: 'gcp', libs: Sidebar.prototype.gcp},
-           	                           {id: 'gcp2', prefix: 'gcp2', libs: Sidebar.prototype.gcp2},
-//           	                           {id: 'gcp19', prefix: 'gcp19', libs: Sidebar.prototype.gcp2},
            	                           {id: 'rack', prefix: 'rack', libs: Sidebar.prototype.rack},
            	                           {id: 'electrical', prefix: 'electrical', libs: Sidebar.prototype.electrical},
            	                           {id: 'aws2', prefix: 'aws2', libs: Sidebar.prototype.aws2},
            	                           {id: 'aws3', prefix: 'aws3', libs: Sidebar.prototype.aws3},
-           	                           {id: 'aws4b', prefix: 'aws4b', libs: Sidebar.prototype.aws4b},
-           	                           {id: 'aws4', prefix: 'aws4', libs: Sidebar.prototype.aws4},
            	                           {id: 'pid', prefix: 'pid', libs: Sidebar.prototype.pids},
            	                           {id: 'cisco', prefix: 'cisco', libs: Sidebar.prototype.cisco},
            	                           {id: 'cisco_safe', prefix: 'cisco_safe', libs: Sidebar.prototype.cisco_safe},
@@ -277,36 +289,6 @@
 				{
 					return elts[0].style.display != 'none';
 				}
-				
-				break;
-			}
-		}
-		
-		if (this.customEntries != null)
-		{
-			for (var i = 0; i < this.customEntries.length; i++)
-			{
-				var section = this.customEntries[i];
-				
-				for (var j = 0; j < section.entries.length; j++)
-				{
-					var entry = section.entries[j];
-					
-					if (entry.id == key)
-					{
-						if (entry.libs != null && entry.libs.length > 0)
-						{
-							var elts = this.palettes[entry.id + '.0'];
-							
-							if (elts != null)
-							{
-								return elts[0].style.display != 'none';
-							}
-						}
-					
-						break;
-					}
-				}
 			}
 		}
 		
@@ -339,31 +321,6 @@
 			}
 		}
 		
-		if (this.customEntries != null)
-		{
-			for (var i = 0; i < this.customEntries.length; i++)
-			{
-				var section = this.customEntries[i];
-				
-				for (var j = 0; j < section.entries.length; j++)
-				{
-					var entry = section.entries[j];
-					
-					if (entry.libs != null && entry.libs.length > 0)
-					{
-						var libs = [];
-						
-						for (var k = 0; k < entry.libs.length; k++)
-						{
-							libs.push(entry.id + '.' + k);
-						}
-						
-						this.showPalettes('', libs, mxUtils.indexOf(tmp, entry.id) >= 0);
-					}
-				}
-			}
-		}
-		
 		if (remember)
 		{
 			mxSettings.setLibraries(stc);
@@ -380,42 +337,34 @@
 		// http://www.alderg.com/merge.html for creating a vertical stack of PNG images if multiple sidebars are part of an entry.
 		this.entries = [{title: mxResources.get('standard'),
             			entries: [{title: mxResources.get('general'), id: 'general', image: IMAGE_PATH + '/sidebar-general.png'},
-            			          {title: mxResources.get('basic'), id: 'basic', image: IMAGE_PATH + '/sidebar-basic.png'},
             			          {title: mxResources.get('arrows'), id: 'arrows2', image: IMAGE_PATH + '/sidebar-arrows2.png'},
+            			          {title: mxResources.get('basic'), id: 'basic', image: IMAGE_PATH + '/sidebar-basic.png'},
             			          {title: mxResources.get('clipart'), id: 'clipart', image: IMAGE_PATH + '/sidebar-clipart.png'},
             			          {title: mxResources.get('flowchart'), id: 'flowchart', image: IMAGE_PATH + '/sidebar-flowchart.png'}]},
             			{title: mxResources.get('software'),
-            			entries: [{title: 'Active Directory', id: 'active_directory', image: IMAGE_PATH + '/sidebar-active_directory.png'},
-            					  {title: mxResources.get('android'), id: 'android', image: IMAGE_PATH + '/sidebar-android.png'},
+            			entries: [{title: mxResources.get('android'), id: 'android', image: IMAGE_PATH + '/sidebar-android.png'},
             					  {title: 'Atlassian', id: 'atlassian', image: IMAGE_PATH + '/sidebar-atlassian.png'},
             			          {title: mxResources.get('bootstrap'), id: 'bootstrap', image: IMAGE_PATH + '/sidebar-bootstrap.png'},
-            			          {title: 'Data Flow Diagram', id: 'dfd', image: IMAGE_PATH + '/sidebar-dfd.png'},
             			          {title: mxResources.get('entityRelation'), id: 'er', image: IMAGE_PATH + '/sidebar-er.png'},
             			          {title: mxResources.get('ios'), id: 'ios', image: IMAGE_PATH + '/sidebar-ios.png'},
             			          {title: mxResources.get('mockups'), id: 'mockups', image: IMAGE_PATH + '/sidebar-mockups.png'},
             			          {title: 'Sitemap', id: 'sitemap', image: IMAGE_PATH + '/sidebar-sitemap.png'},
             			          {title: mxResources.get('uml'), id: 'uml', image: IMAGE_PATH + '/sidebar-uml.png'}]},
             			{title: mxResources.get('networking'),
-            			entries: [{title: 'Allied Telesis', id: 'allied_telesis', image: IMAGE_PATH + '/sidebar-allied_telesis.png'},
-            					  {title: 'AWS17', id: 'aws3', image: IMAGE_PATH + '/sidebar-aws3.png'},
-							      {title: 'AWS18', id: 'aws4b', image: IMAGE_PATH + '/sidebar-aws4.png'},
-							      {title: 'AWS19', id: 'aws4', image: IMAGE_PATH + '/sidebar-aws4.png'},
-			            			// TODO: Add isometric containers  		                          
+            			entries: [{title: mxResources.get('aws'), id: 'aws3', image: IMAGE_PATH + '/sidebar-aws3.png'},
+            			// TODO: Add isometric containers  		                          
             			          {title: mxResources.get('aws3d'), id: 'aws3d', image: IMAGE_PATH + '/sidebar-aws3d.png'},
             			          {title: mxResources.get('azure'), id: 'azure', image: IMAGE_PATH + '/sidebar-azure.png'},
             			          {title: 'Cloud & Enterprise', id: 'mscae', image: IMAGE_PATH + '/sidebar-mscae.png'},
             			          {title: mxResources.get('cisco'), id: 'cisco', image: IMAGE_PATH + '/sidebar-cisco.png'},
             			          {title: 'Cisco Safe', id: 'cisco_safe', image: IMAGE_PATH + '/sidebar-cisco_safe.png'},
-            			          {title: 'Cumulus', id: 'cumulus', image: IMAGE_PATH + '/sidebar-cumulus.png'},
             			          {title: 'Citrix', id: 'citrix', image: IMAGE_PATH + '/sidebar-citrix.png'},
-//            			          {title: 'Google Cloud Platform', id: 'gcp2', image: IMAGE_PATH + '/sidebar-gcp2.png'},
-            			          {title: 'Google Cloud Platform', id: 'gcp2', image: IMAGE_PATH + '/sidebar-gcp2.png'},
+            			          {title: 'Google Cloud Platform', id: 'gcp', image: IMAGE_PATH + '/sidebar-gcp.png'},
             			          {title: 'IBM', id: 'ibm', image: IMAGE_PATH + '/sidebar-ibm.png'},
             			          {title: 'Network', id: 'network', image: IMAGE_PATH + '/sidebar-network.png'},
             			          {title: 'Office', id: 'office', image: IMAGE_PATH + '/sidebar-office.png'},
             			          {title: mxResources.get('rack'), id: 'rack', image: IMAGE_PATH + '/sidebar-rack.png'},
-            			          {title: 'Veeam', id: 'veeam', image: IMAGE_PATH + '/sidebar-veeam.png'},
-            			          {title: 'VMware', id: 'vvd', image: IMAGE_PATH + '/sidebar-vvd.png'}]},
+            			          {title: 'Veeam', id: 'veeam', image: IMAGE_PATH + '/sidebar-veeam.png'}]},
             			{title: mxResources.get('business'),
             			entries: [{title: 'ArchiMate 3.0', id: 'archimate3', image: IMAGE_PATH + '/sidebar-archimate3.png'},
             			          {title: mxResources.get('archiMate21'), id: 'archimate', image: IMAGE_PATH + '/sidebar-archimate.png'},
@@ -424,7 +373,6 @@
             			          {title: mxResources.get('sysml'), id: 'sysml', image: IMAGE_PATH + '/sidebar-sysml.png'}]},
             			{title: mxResources.get('other'),
             			entries: [{title: mxResources.get('cabinets'), id: 'cabinets', image: IMAGE_PATH + '/sidebar-cabinets.png'},
-            					  {title: 'Infographic', id: 'infographic', image: IMAGE_PATH + '/sidebar-infographic.png'},
             			          {title: mxResources.get('eip'), id: 'eip', image: IMAGE_PATH + '/sidebar-eip.png'},
             			          {title: mxResources.get('electrical'), id: 'electrical', image: IMAGE_PATH + '/sidebar-electrical.png'},
             			          {title: mxResources.get('floorplans'), id: 'floorplan', image: IMAGE_PATH + '/sidebar-floorplans.png'},
@@ -440,13 +388,6 @@
 		// Contains additional tags for shapes
 		this.shapetags = {};
 
-		// Adds tags from compressed text file for improved searches
-		if (this.tagIndex != null)
-		{
-			this.addTagIndex(Graph.decompress(this.tagIndex));
-			this.tagIndex = null;
-		}
-		
 		this.initPalettes();
 	}
 	
@@ -495,28 +436,18 @@
 					clone.style.borderColor = 'transparent';
 					clone.style.width = '456px';
 	
-					var parser = new DOMParser();
-					var doc = parser.parseFromString('<body style="background:#ffffff;font-family:Helvetica,Arial;">' +
-							title2.outerHTML + clone.outerHTML + '</body>', 'text/html');
+					var html = '<!DOCTYPE html><html><head><link rel="stylesheet" type="text/css" href="https://www.draw.io/styles/grapheditor.css">' +
+						'</head><body style="background:#ffffff;font-family:Helvetica,Arial;">' +
+						title2.outerHTML + clone.outerHTML + '</body></html>';
+	
+					clone.style.position = 'absolute';
+					window.document.body.appendChild(clone);
+					var h = clone.clientHeight + 18;
+					clone.parentNode.removeChild(clone);
 					
-					this.editorUi.convertImages(doc.documentElement, mxUtils.bind(this, function(body)
-					{
-						var html = '<!DOCTYPE html><html><head><link rel="stylesheet" type="text/css" ' +
-							'href="https://www.draw.io/styles/grapheditor.css"></head>' +
-							mxUtils.getXml(body) + '</html>';
-		
-						clone.style.position = 'absolute';
-						window.document.body.appendChild(clone);
-						var h = clone.clientHeight + 18;
-						clone.parentNode.removeChild(clone);
-						
-						this.editorUi.confirm('Image data created', mxUtils.bind(this, function()
-						{
-				    		new mxXmlRequest(EXPORT_URL, 'w=456&h=' + h + '&html=' + encodeURIComponent(
-				    			Graph.compress(html))).simulate(document, '_blank');
-						}), null, mxResources.get('save'), mxResources.get('cancel'));
-					}));
-					
+		    		new mxXmlRequest(EXPORT_URL, 'w=456&h=' + h + '&html=' + encodeURIComponent(
+		    			this.editorUi.editor.graph.compress(html))).simulate(document, '_blank');
+	
 					return;
 				}
 				
@@ -723,99 +654,36 @@
 		}
 
 		this.addSearchPalette(true);
-		
-		// Adds custom sections first
-		if (this.customEntries != null)
-		{
-			for (var i = 0; i < this.customEntries.length; i++)
-			{
-				var section = this.customEntries[i];
-				
-				for (var j = 0; j < section.entries.length; j++)
-				{
-					var entry = section.entries[j];
-					
-					for (var k = 0; k < entry.libs.length; k++)
-					{
-						(mxUtils.bind(this, function(lib)
-						{
-							this.addPalette(entry.id + '.' + k, this.editorUi.getResource(lib.title),
-								false, mxUtils.bind(this, function(content, title)
-							{
-								var dataLoaded = mxUtils.bind(this, function(images)
-								{
-									this.addEntries(images);
-									this.editorUi.addLibraryEntries(images, content);
-								});
-								
-								var showError = mxUtils.bind(this, function(err)
-								{
-									content.innerHTML = '';
-									var div = document.createElement('div');
-									div.style.color = 'rgb(179, 179, 179)';
-									div.style.textAlign = 'center';
-									div.style.paddingTop = '6px';
-									mxUtils.write(div, err);
-									content.appendChild(div);
-								});
-								
-								if (lib.data)
-								{
-									dataLoaded(lib.data);
-								}
-								else
-								{
-									content.style.display = 'none';
-									title.innerHTML = '';
-									mxUtils.write(title, mxResources.get('loading') + '...');
-									var url = lib.url;
-									
-									if (!this.editorUi.editor.isCorsEnabledForUrl(url))
-									{
-										url = PROXY_URL + '?url=' + encodeURIComponent(url);
-									}
-									
-									this.editorUi.loadUrl(url, mxUtils.bind(this, function(data)
-									{
-										content.style.display = 'block';
-										title.innerHTML = '';
-										mxUtils.write(title, this.editorUi.getResource(lib.title));
-
-										try
-										{
-											var doc = mxUtils.parseXml(data);
-											
-											if (doc.documentElement.nodeName == 'mxlibrary')
-											{
-												var images = JSON.parse(mxUtils.getTextContent(doc.documentElement));
-												dataLoaded(images);
-											}
-											else
-											{
-												showError(mxResources.get('notALibraryFile'));
-											}
-										}
-										catch (e)
-										{
-											showError(mxResources.get('error') + ': ' + e.message);
-										}
-									}));
-								}
-							}));
-						}))(entry.libs[k]);
-					}
-				}
-			}
-		}
-		
-		this.addGeneralPalette(this.customEntries == null);
+		this.addGeneralPalette(true);
 		this.addMiscPalette(false);
 		this.addAdvancedPalette(false);
+		this.addUmlPalette(false);
+		this.addErPalette();
 		this.addBasicPalette();
+		this.addFlowchartPalette();
+		this.addNetworkPalette();
+		this.addAzurePalette();
+		this.addCitrixPalette();
+		this.addMSCAEPalette();
+		this.addBpmnPalette(dir, false);
+		this.addAWS3Palette();
+		this.addAWS3DPalette();
+		this.addLeanMappingPalette();
+		this.addIos7Palette();
+		this.addIosPalette();
+		this.addAndroidPalette();
+		this.addMockupPalette();
+		this.addElectricalPalette();
+		this.addOfficePalette();
+		this.addVeeamPalette();
+		this.addIBMPalette();
+		this.addSitemapPalette();
+
 		this.addStencilPalette('arrows', mxResources.get('arrows'), dir + '/arrows.xml',
 				';html=1;' + mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;' + mxConstants.STYLE_STROKEWIDTH + '=2;strokeColor=#000000;');
-		this.addArrows2Palette();
 		
+		this.addArrows2Palette();
+				
 		this.addImagePalette('computer', 'Clipart / Computer', imgDir
 				+ '/lib/clip_art/computers/', '_128x128.png', ['Antivirus',
 				'Data_Filtering', 'Database', 'Database_Add', 'Database_Minus',
@@ -836,7 +704,6 @@
 	            'Server', 'Server Rack', 'Server Rack Empty', 'Server Rack Partial',
 	            'Server Tower', 'Software', 'Stylus', 'Touch', 'USB Hub',
 	            'Virtual Application', 'Virtual Machine', 'Virus', 'Workstation']);
-		
 		this.addImagePalette('finance', 'Clipart / Finance', imgDir
 				+ '/lib/clip_art/finance/', '_128x128.png', [ 'Arrow_Down',
 				'Arrow_Up', 'Coins', 'Credit_Card', 'Dollar', 'Graph',
@@ -844,7 +711,6 @@
 				'Stock_Down', 'Stock_Up'], ['Arrow_Down', 'Arrow Up',
 	            'Coins', 'Credit Card', 'Dollar', 'Graph', 'Pie Chart',
 	            'Piggy Bank', 'Safe', 'Shopping Basket', 'Stock Down', 'Stock Up']);
-		
 		this.addImagePalette('clipart', 'Clipart / Various', imgDir
 				+ '/lib/clip_art/general/', '_128x128.png', [ 'Battery_0',
 				'Battery_100', 'Battery_50', 'Battery_75', 'Battery_allstates',
@@ -854,7 +720,6 @@
 	            'Battery 75%', 'Battery', 'Bluetooth', 'Globe',
 	            'Empty Folder', 'Full Folder', 'Gear', 'Keys', 'Lock', 'Mousepointer',
 	            'Plug', 'Ships Wheel', 'Star', 'Tire']);
-		
 		this.addImagePalette('networking', 'Clipart / Networking', imgDir
 				+ '/lib/clip_art/networking/', '_128x128.png', ['Bridge',
 				'Certificate', 'Certificate_Off', 'Cloud', 'Cloud_Computer',
@@ -877,7 +742,6 @@
 				  'Wireless_Router_N': 'wireless router switch wap wifi access point wlan',
 				  'Router': 'router switch',
 				  'Router_Icon': 'router switch'});
-		
 		this.addImagePalette('people', 'Clipart / People', imgDir
 				+ '/lib/clip_art/people/', '_128x128.png', ['Suit_Man',
 				'Suit_Man_Black', 'Suit_Man_Blue', 'Suit_Man_Green',
@@ -902,7 +766,6 @@
 				'Telesales_Woman_Black', 'Waiter', 'Waiter_Black',
 				'Waiter_Woman', 'Waiter_Woman_Black', 'Worker_Black',
 				'Worker_Man', 'Worker_Woman', 'Worker_Woman_Black']);
-		
 		this.addImagePalette('telco', 'Clipart / Telecommunication', imgDir
 				+ '/lib/clip_art/telecommunication/', '_128x128.png', [
 				'BlackBerry', 'Cellphone', 'HTC_smartphone', 'iPhone',
@@ -910,41 +773,27 @@
 				['BlackBerry', 'Cellphone', 'HTC smartphone', 'iPhone',
 				  'Palm Treo', 'Signaltower off', 'Signaltower on']);
 
-		this.addFlowchartPalette();
-		this.addActiveDirectoryPalette();
-		this.addAndroidPalette();
-		this.addAtlassianPalette();
-		this.addBootstrapPalette();
-		this.addDFDPalette();
-		this.addErPalette();
-		this.addIos7Palette();
-		this.addIosPalette();
-		this.addMockupPalette();
-		this.addSitemapPalette();
-		this.addUmlPalette(false);
-		this.addAlliedTelesisPalette();
-		this.addAWS3Palette();
-		this.addAWS4bPalette();
-		this.addAWS4Palette();
-		this.addAWS3DPalette();
-		this.addAzurePalette();
-		this.addMSCAEPalette();
-		
-		for (var i = 0; i < cisco.length; i++)
+		for (var i = 0; i < signs.length; i++)
 		{
-			this.addStencilPalette('cisco' + cisco[i], 'Cisco / ' + cisco[i],
-				dir + '/cisco/' + cisco[i].toLowerCase().replace(/ /g, '_') + '.xml',
-				';html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;', null, null, 1.6);
+			this.addStencilPalette('signs' + signs[i], 'Signs / ' + signs[i],
+				dir + '/signs/' + signs[i].toLowerCase() + '.xml',
+				';html=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;');
+		}
+		
+		for (var i = 0; i < gcp.length; i++)
+		{
+			if (gcp[i].toLowerCase() === 'cards')
+			{
+				this.addGoogleCloudPlatformCardsPalette();
+			}
+			else
+			{
+				this.addStencilPalette('gcp' + gcp[i], 'GCP / ' + gcp[i],
+						dir + '/gcp/' + gcp[i].toLowerCase().replace(/ /g, '_') + '.xml',
+						';html=1;fillColor=#4387FD;gradientColor=#4683EA;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;');
+			}
 		}
 
-		this.addCiscoSafePalette();
-		this.addCumulusPalette();
-		this.addCitrixPalette();
-		this.addGCP2Palette();
-		this.addIBMPalette();
-		this.addNetworkPalette();
-		this.addOfficePalette();
-		
 		for (var i = 0; i < rack.length; i++)
 		{
 			if (rack[i].toLowerCase() === 'general')
@@ -955,10 +804,6 @@
 			{
 				this.addRackF5Palette();
 			}
-			else if (rack[i].toLowerCase() === 'dell')
-			{
-				this.addRackDellPalette();
-			}
 			else
 			{
 				this.addStencilPalette('rack' + rack[i], 'Rack / ' + rack[i],
@@ -967,12 +812,47 @@
 			}
 		}
 
-		this.addVeeamPalette();
-		this.addVVDPalette();
-		this.addArchimate3Palette();
-		this.addArchiMatePalette();
-		this.addBpmnPalette(dir, false);
-		this.addLeanMappingPalette();
+		for (var i = 0; i < pids.length; i++)
+		{
+			if (pids[i] == 'Instruments')
+			{
+				this.addPidInstrumentsPalette();
+			}
+			else if (pids[i] == 'Misc')
+			{
+				this.addPidMiscPalette();
+			}
+			else if (pids[i] == 'Valves')
+			{
+				this.addPidValvesPalette();
+			}
+			else if (pids[i] == 'Compressors')
+			{
+				this.addPidCompressorsPalette();
+			}
+			else if (pids[i] == 'Engines')
+			{
+				this.addPidEnginesPalette();
+			}
+			else if (pids[i] == 'Filters')
+			{
+				this.addPidFiltersPalette();
+			}
+			else if (pids[i] == 'Flow Sensors')
+			{
+				this.addPidFlowSensorsPalette();
+			}
+			else if (pids[i] == 'Piping')
+			{
+				this.addPidPipingPalette();
+			}
+			else
+			{
+				this.addStencilPalette('pid' + pids[i], 'Proc. Eng. / ' + pids[i],
+					dir + '/pid/' + pids[i].toLowerCase().replace(' ', '_') + '.xml',
+					';html=1;align=center;' + mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;dashed=0;');
+			}
+		}
 		
 		for (var i = 0; i < sysml.length; i++)
 		{
@@ -1026,9 +906,6 @@
 			}
 		}
 
-		this.addCabinetsPalette();
-		this.addInfographicPalette();
-		
 		for (var i = 0; i < eip.length; i++)
 		{
 			if (eip[i] == 'Message Construction')
@@ -1061,9 +938,18 @@
 			}
 		}
 		
-		this.addElectricalPalette();
+		for (var i = 0; i < cisco.length; i++)
+		{
+			this.addStencilPalette('cisco' + cisco[i], 'Cisco / ' + cisco[i],
+				dir + '/cisco/' + cisco[i].toLowerCase().replace(/ /g, '_') + '.xml',
+				';html=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;', null, null, 1.6);
+		}
+
+		this.addCiscoSafePalette();
 		this.addFloorplanPalette();
-		
+		this.addAtlassianPalette();
+		this.addBootstrapPalette();
+
 		for (var i = 0; i < gmdl.length; i++)
 		{
 			if (gmdl[i] == 'Bottom Navigation')
@@ -1140,57 +1026,11 @@
 			}
 		}
 
-		for (var i = 0; i < pids.length; i++)
-		{
-			if (pids[i] == 'Instruments')
-			{
-				this.addPidInstrumentsPalette();
-			}
-			else if (pids[i] == 'Misc')
-			{
-				this.addPidMiscPalette();
-			}
-			else if (pids[i] == 'Valves')
-			{
-				this.addPidValvesPalette();
-			}
-			else if (pids[i] == 'Compressors')
-			{
-				this.addPidCompressorsPalette();
-			}
-			else if (pids[i] == 'Engines')
-			{
-				this.addPidEnginesPalette();
-			}
-			else if (pids[i] == 'Filters')
-			{
-				this.addPidFiltersPalette();
-			}
-			else if (pids[i] == 'Flow Sensors')
-			{
-				this.addPidFlowSensorsPalette();
-			}
-			else if (pids[i] == 'Piping')
-			{
-				this.addPidPipingPalette();
-			}
-			else
-			{
-				this.addStencilPalette('pid' + pids[i], 'Proc. Eng. / ' + pids[i],
-					dir + '/pid/' + pids[i].toLowerCase().replace(' ', '_') + '.xml',
-					';html=1;pointerEvents=1;align=center;' + mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;dashed=0;');
-			}
-		}
-		
+		this.addCabinetsPalette();
+		this.addArchimate3Palette();
+		this.addArchiMatePalette();
 		this.addWebIconsPalette();
 		this.addWebLogosPalette();
-				
-		for (var i = 0; i < signs.length; i++)
-		{
-			this.addStencilPalette('signs' + signs[i], 'Signs / ' + signs[i],
-				dir + '/signs/' + signs[i].toLowerCase() + '.xml',
-				';html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;');
-		}
 		
 		// LATER: Check if conflicts with restore libs after loading file
 		this.showEntries();
@@ -1236,15 +1076,23 @@
 		// Lazy-load indices
 		if (this.searchFileData != null)
 		{
-			this.addSearchFileData(mxUtils.parseXml(Graph.decompress(this.searchFileData)).documentElement);
+			this.addSearchFileData(mxUtils.parseXml(this.editorUi.editor.graph.decompress(this.searchFileData)).documentElement);
 			
 			this.searchFileData = null;
+		}
+		
+		// Adds tags from compressed text file for improved searches.
+		if (this.tagIndex != null)
+		{
+			this.addTagIndex(this.editorUi.editor.graph.decompress(this.tagIndex));
+			
+			this.tagIndex = null;
 		}
 		
 		// Logs search terms for improving search results
 		if (!this.editorUi.isOffline() && page == 0)
 		{
-			EditorUi.logEvent({category: 'Shape', action: 'search', label: searchTerms});
+			this.editorUi.logEvent({category: 'Sidebar', action: 'search', label: searchTerms});
 		}
 		
 		if (ICONSEARCH_PATH != null)
@@ -1255,66 +1103,58 @@
 				{
 					var pg = page - Math.ceil((len - count / 4) / count);
 	
-					mxUtils.get(ICONSEARCH_PATH + '?q=' + encodeURIComponent(searchTerms) +
+					mxUtils.get(ICONSEARCH_PATH + '?v=2&q=' + encodeURIComponent(searchTerms) +
 						'&p=' + pg + '&c=' + count, mxUtils.bind(this, function(req)
 					{
 						try
 						{
 							if (req.getStatus() >= 200 && req.getStatus() <= 299)
 							{
-								// Ignore without error if no response
-								if (req.getText() != null && req.getText().length > 0)
+								try
 								{
-									try
-									{
-										var res = JSON.parse(req.getText());
-										
-										if (res == null || res.icons == null)
-										{
-											succ(results, len, false, terms);
-											this.editorUi.handleError(res);
-										}
-										else
-										{
-											for (var i = 0; i < res.icons.length; i++)
-											{
-												var sizes = res.icons[i].raster_sizes;
-												var index = sizes.length - 1;
-												
-												while (index > 0 && sizes[index].size > 128)
-												{
-													index--;
-												}
-						
-												var size = sizes[index].size;
-												var url = sizes[index].formats[0].preview_url;
-						
-												if (size != null && url != null)
-												{
-													(mxUtils.bind(this, function(s, u)
-													{
-														results.push(mxUtils.bind(this, function()
-														{
-															return this.createVertexTemplate('shape=image;html=1;verticalAlign=top;' +
-																'verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;' +
-																'aspect=fixed;image=' + u, s, s, '');
-														}));
-													}))(size, url);
-												}
-											}
-						
-											succ(results, (page - 1) * count + results.length, res.icons.length == count, terms);
-										}
-									}
-									catch (e)
+									var res = JSON.parse(req.getText());
+									
+									if (res == null || res.icons == null)
 									{
 										succ(results, len, false, terms);
-										this.editorUi.handleError(e);
+										this.editorUi.handleError(res);
+									}
+									else
+									{
+										for (var i = 0; i < res.icons.length; i++)
+										{
+											var sizes = res.icons[i].raster_sizes;
+											var index = sizes.length - 1;
+											
+											while (index > 0 && sizes[index].size > 128)
+											{
+												index--;
+											}
+					
+											var size = sizes[index].size;
+											var url = sizes[index].formats[0].preview_url;
+					
+											if (size != null && url != null)
+											{
+												(mxUtils.bind(this, function(s, u)
+												{
+													results.push(mxUtils.bind(this, function()
+													{
+														return this.createVertexTemplate('shape=image;html=1;verticalAlign=top;' +
+															'verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;' +
+															'aspect=fixed;image=' + u, s, s, '');
+													}));
+												}))(size, url);
+											}
+										}
+					
+										succ(results, (page - 1) * count + results.length, res.icons.length == count, terms);
 									}
 								}
-								else
+								catch (e)
 								{
 									succ(results, len, false, terms);
+									this.editorUi.handleError(e);
 								}
 							}
 							else
@@ -1356,7 +1196,7 @@
 		
 		if (cells != null && graph.getSelectionCount() == 1 && graph.getModel().isVertex(cells[0]))
 		{
-			var target = graph.cloneCell(cells[0]);
+			var target = graph.cloneCells(cells)[0];
 			
 			// Inserts cell as target of selected edge if not connected
 			if (graph.getModel().isEdge(graph.getSelectionCell()) && graph.getModel().getTerminal(graph.getSelectionCell(), false) == null &&

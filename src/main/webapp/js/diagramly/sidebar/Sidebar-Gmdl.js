@@ -6,7 +6,7 @@
 		var s = "dashed=0;align=center;fontSize=12;shape=";
 		var s2 = "dashed=0;html=1;shape=mxgraph.gmdl.";
 		var anc = "shape=rect;fillColor=none;strokeColor=none;";
-		var fac = 'shape=ellipse;dashed=0;strokeColor=none;shadow=1;fontSize=13;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;html=1;aspect=fixed;';
+		var fac = 'shape=ellipse;dashed=0;fillColor=#ffffff;strokeColor=none;shadow=1;fontSize=13;fontColor=#000000;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;html=1;aspect=fixed;';
 		var gn = 'mxgraph.gmdl';
 		var dt = 'gmdl google media design library bottom navigation ';
 		var sb = this;
@@ -32,7 +32,7 @@
 		var s = "dashed=0;align=center;fontSize=12;shape=";
 		var s2 = "dashed=0;html=1;shape=mxgraph.gmdl.";
 		var anc = "shape=rect;fillColor=none;strokeColor=none;";
-		var fac = 'shape=ellipse;dashed=0;strokeColor=none;shadow=1;fontSize=13;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;html=1;aspect=fixed;';
+		var fac = 'shape=ellipse;dashed=0;fillColor=#ffffff;strokeColor=none;shadow=1;fontSize=13;fontColor=#000000;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;html=1;aspect=fixed;';
 		var gn = 'mxgraph.gmdl';
 		var dt = 'gmdl google media design library bottom sheets ';
 		var sb = this;
@@ -68,19 +68,19 @@
 		var s = "dashed=0;align=center;fontSize=12;shape=";
 		var s2 = "dashed=0;html=1;shape=mxgraph.gmdl.";
 		var anc = "shape=rect;fillColor=none;strokeColor=none;";
-		var fac = 'shape=ellipse;dashed=0;strokeColor=none;shadow=1;fontSize=13;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;html=1;aspect=fixed;';
+		var fac = 'shape=ellipse;dashed=0;fillColor=#ffffff;strokeColor=none;shadow=1;fontSize=13;fontColor=#000000;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;html=1;aspect=fixed;';
 		var gn = 'mxgraph.gmdl';
 		var dt = 'gmdl google media design library button ';
 		var sb = this;
 		
 		var fns = [
-			this.createVertexTemplateEntry(s + 'rect;fillColor=#e0e0e0;strokeColor=none;fontStyle=1;shadow=1',
+			this.createVertexTemplateEntry(s + 'rect;fillColor=#e0e0e0;strokeColor=none;fontStyle=1;shadow=1;fontColor=#000000;',
 					100, 36, 'NORMAL', 'Raised Button (Normal)', null, null, this.getTagsForStencil(gn, 'button', dt).join(' ')),
-			this.createVertexTemplateEntry(s + 'rect;fillColor=#e0e0e0;strokeColor=none;fontStyle=1;shadow=1',
+			this.createVertexTemplateEntry(s + 'rect;fillColor=#e0e0e0;strokeColor=none;fontStyle=1;shadow=1;fontColor=#000000;',
 					100, 36, 'HOVER', 'Raised Button (Hover)', null, null, this.getTagsForStencil(gn, 'button', dt).join(' ')),
 			this.createVertexTemplateEntry(s + 'rect;fillColor=#e0e0e0;strokeColor=none;fontStyle=1;shadow=1;',
 					100, 36, 'FOCUSED', 'Raised Button (Focused)', null, null, this.getTagsForStencil(gn, 'button', dt).join(' ')),
-			this.createVertexTemplateEntry(s + 'rect;fillColor=#e0e0e0;strokeColor=none;fontStyle=1;shadow=1',
+			this.createVertexTemplateEntry(s + 'rect;fillColor=#e0e0e0;strokeColor=none;fontStyle=1;shadow=1;fontColor=#000000;',
 					100, 36, 'PRESSED', 'Raised Button (Pressed)', null, null, this.getTagsForStencil(gn, 'button', dt).join(' ')),
 			this.createVertexTemplateEntry(s + 'rect;fillColor=#000000;strokeColor=none;fontStyle=1;opacity=12;fontColor=#BDBDBD;',
 					100, 36, 'DISABLED', 'Raised Button (Pressed)', null, null, this.getTagsForStencil(gn, 'button', dt).join(' ')),
@@ -92,17 +92,17 @@
 					100, 36, 'FOCUSED', 'Raised Button (Focused)', null, null, this.getTagsForStencil(gn, 'button', dt).join(' ')),
 			this.createVertexTemplateEntry(s + 'rect;fillColor=#2196F3;strokeColor=none;fontStyle=1;shadow=1;fontColor=#ffffff;',
 					100, 36, 'PRESSED', 'Raised Button (Pressed)', null, null, this.getTagsForStencil(gn, 'button', dt).join(' ')),
-			this.createVertexTemplateEntry(s + 'rect;strokeColor=none;fontStyle=1;opacity=12;fontColor=#BDBDBD;shadow=0;',
+			this.createVertexTemplateEntry(s + 'rect;fillColor=#ffffff;strokeColor=none;fontStyle=1;opacity=12;fontColor=#BDBDBD;shadow=0;',
 					100, 36, 'DISABLED', 'Raised Button (Pressed)', null, null, this.getTagsForStencil(gn, 'button', dt).join(' ')),
-			this.createVertexTemplateEntry(s + 'rect;fillColor=none;strokeColor=none;fontStyle=1;shadow=0;',
+			this.createVertexTemplateEntry(s + 'rect;fillColor=none;strokeColor=none;fontStyle=1;fontColor=#000000;shadow=0;',
 					100, 36, 'NORMAL', 'Raised Button (Normal)', null, null, this.getTagsForStencil(gn, 'button', dt).join(' ')),
-			this.createVertexTemplateEntry(s + 'rect;fillColor=#999999;opacity=20;strokeColor=none;fontStyle=1;shadow=0;',
+			this.createVertexTemplateEntry(s + 'rect;fillColor=#999999;opacity=20;strokeColor=none;fontStyle=1;fontColor=#000000;shadow=0;',
 					100, 36, 'HOVER', 'Raised Button (Hover)', null, null, this.getTagsForStencil(gn, 'button', dt).join(' ')),
-			this.createVertexTemplateEntry(s + 'rect;fillColor=#999999;opacity=20;strokeColor=none;fontStyle=1;shadow=0;',
+			this.createVertexTemplateEntry(s + 'rect;fillColor=#999999;opacity=20;strokeColor=none;fontStyle=1;fontColor=#000000;shadow=0;',
 					100, 36, 'FOCUSED', 'Raised Button (Focused)', null, null, this.getTagsForStencil(gn, 'button', dt).join(' ')),
 			this.createVertexTemplateEntry(s + 'rect;fillColor=#999999;opacity=40;strokeColor=none;fontStyle=1;',
 					100, 36, 'PRESSED', 'Raised Button (Pressed)', null, null, this.getTagsForStencil(gn, 'button', dt).join(' ')),
-			this.createVertexTemplateEntry(s + 'rect;opacity=26;strokeColor=none;fontStyle=1;opacity=12;fontColor=#BDBDBD;shadow=0;',
+			this.createVertexTemplateEntry(s + 'rect;fillColor=#ffffff;opacity=26;strokeColor=none;fontStyle=1;opacity=12;fontColor=#BDBDBD;shadow=0;',
 					100, 36, 'DISABLED', 'Raised Button (Pressed)', null, null, this.getTagsForStencil(gn, 'button', dt).join(' ')),
 			this.createVertexTemplateEntry(s + 'rect;fillColor=none;strokeColor=none;fontStyle=1;fontColor=#ffffff;shadow=0;',
 					100, 36, 'NORMAL', 'Raised Button (Normal)', null, null, this.getTagsForStencil(gn, 'button', dt).join(' ')),
@@ -456,7 +456,7 @@
 				var bg1 = new mxCell('', new mxGeometry(0, 0, 344, 254), 'shape=rect;fillColor=#BDBDBD;strokeColor=#BDBDBD;shadow=1;');
 				bg1.vertex = true;
 				var part1 = new mxCell('Greyhound divisively hello couldly wonderfully marginally far upon excluding.', 
-						new mxGeometry(0, 172, 344, 82), 'shape=rect;strokeColor=none;whiteSpace=wrap;align=left;spacingLeft=16;fontColor=#666666;fontSize=14;');
+						new mxGeometry(0, 172, 344, 82), 'shape=rect;strokeColor=none;fillColor=#ffffff;;whiteSpace=wrap;align=left;spacingLeft=16;fontColor=#666666;fontSize=14;');
 				part1.vertex = true;
 				bg1.insert(part1);
 			   	return sb.createVertexTemplateFromCells([bg1], 300, 230, 'Card');
@@ -648,7 +648,7 @@
 	
 	Sidebar.prototype.addGMDLIconsPalette = function(expand)
 	{
-		var s2 = "dashed=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;shape=mxgraph.gmdl.";
+		var s2 = "dashed=0;aspect=fixed;shape=mxgraph.gmdl.";
 		var gn = 'mxgraph.gmdl';
 		var dt = 'gmdl google media design library icon ';
 		var sb = this;
@@ -916,7 +916,7 @@
 	Sidebar.prototype.addGMDLSelectionControlsPalette = function(expand)
 	{
 		var s = "dashed=0;shape=";
-		var s2 = "dashed=0;labelPosition=right;align=left;shape=mxgraph.gmdl.";
+		var s2 = "dashed=0;shape=mxgraph.gmdl.";
 		var gn = 'mxgraph.gmdl';
 		var dt = 'gmdl google media design library selection control ';
 		var sb = this;
@@ -930,7 +930,7 @@
 			}),
 			this.addEntry(dt + 'checkbox on focused pressed light dark', function()
 			{
-				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;labelPosition=right;align=left;strokeColor=none;fillColor=#009587;opacity=10;');
+				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;strokeColor=none;fillColor=#009587;opacity=10;');
 				bg1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(16, 16, 16, 16), s2 + 'checkbox;strokeColor=none;fillColor=#009587;strokeWidth=2;');
 				part1.vertex = true;
@@ -945,7 +945,7 @@
 			}),
 			this.addEntry(dt + 'checkbox on disabled focused light', function()
 			{
-				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;labelPosition=right;align=left;strokeColor=none;fillColor=#B0B0B0;opacity=10;');
+				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;strokeColor=none;fillColor=#B0B0B0;opacity=10;');
 				bg1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(16, 16, 16, 16), s2 + 'checkbox;strokeColor=none;fillColor=#B0B0B0;strokeWidth=2;');
 				part1.vertex = true;
@@ -960,7 +960,7 @@
 			}),
 			this.addEntry(dt + 'checkbox off focused pressed light', function()
 			{
-				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;labelPosition=right;align=left;strokeColor=none;fillColor=#666666;opacity=10;');
+				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;strokeColor=none;fillColor=#666666;opacity=10;');
 				bg1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(16, 16, 16, 16), s2 + 'checkbox;strokeColor=#666666;fillColor=none;strokeWidth=2;');
 				part1.vertex = true;
@@ -975,7 +975,7 @@
 			}),
 			this.addEntry(dt + 'checkbox off disabled focused light', function()
 			{
-				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;labelPosition=right;align=left;strokeColor=none;fillColor=#666666;opacity=10;');
+				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;strokeColor=none;fillColor=#666666;opacity=10;');
 				bg1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(16, 16, 16, 16), s2 + 'checkbox;strokeColor=#B0B0B0;fillColor=none;strokeWidth=2;');
 				part1.vertex = true;
@@ -990,7 +990,7 @@
 			}),
 			this.addEntry(dt + 'checkbox on disabled focused dark', function()
 			{
-				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;labelPosition=right;align=left;strokeColor=none;fillColor=#B0B0B0;opacity=10;');
+				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;strokeColor=none;fillColor=#B0B0B0;opacity=10;');
 				bg1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(16, 16, 16, 16), s2 + 'checkbox;strokeColor=none;fillColor=#676767;strokeWidth=2;');
 				part1.vertex = true;
@@ -1005,7 +1005,7 @@
 			}),
 			this.addEntry(dt + 'checkbox off focused pressed dark', function()
 			{
-				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;labelPosition=right;align=left;strokeColor=none;fillColor=#666666;opacity=10;');
+				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;strokeColor=none;fillColor=#666666;opacity=10;');
 				bg1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(16, 16, 16, 16), s2 + 'checkbox;strokeColor=#ffffff;fillColor=none;strokeWidth=2;');
 				part1.vertex = true;
@@ -1020,7 +1020,7 @@
 			}),
 			this.addEntry(dt + 'checkbox off disabled focused dark', function()
 			{
-				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;labelPosition=right;align=left;strokeColor=none;fillColor=#666666;opacity=10;');
+				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;strokeColor=none;fillColor=#666666;opacity=10;');
 				bg1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(16, 16, 16, 16), s2 + 'checkbox;strokeColor=#666666;fillColor=none;strokeWidth=2;');
 				part1.vertex = true;
@@ -1035,7 +1035,7 @@
 			}),
 			this.addEntry(dt + 'radio button on focused pressed light dark', function()
 			{
-				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;labelPosition=right;align=left;strokeColor=none;fillColor=#009587;opacity=10;');
+				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;strokeColor=none;fillColor=#009587;opacity=10;');
 				bg1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(16, 16, 16, 16), s2 + 'radiobutton;strokeColor=#009587;fillColor=#009587;strokeWidth=2;');
 				part1.vertex = true;
@@ -1050,7 +1050,7 @@
 			}),
 			this.addEntry(dt + 'radio button on disabled focused light', function()
 			{
-				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;labelPosition=right;align=left;strokeColor=none;fillColor=#B0B0B0;opacity=10;');
+				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;strokeColor=none;fillColor=#B0B0B0;opacity=10;');
 				bg1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(16, 16, 16, 16), s2 + 'radiobutton;strokeColor=#B0B0B0;fillColor=#B0B0B0;strokeWidth=2;');
 				part1.vertex = true;
@@ -1065,7 +1065,7 @@
 			}),
 			this.addEntry(dt + 'radio button off focused pressed light', function()
 			{
-				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;labelPosition=right;align=left;strokeColor=none;fillColor=#666666;opacity=10;');
+				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;strokeColor=none;fillColor=#666666;opacity=10;');
 				bg1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(16, 16, 16, 16), s2 + 'radiobutton;strokeColor=#666666;fillColor=none;strokeWidth=2;');
 				part1.vertex = true;
@@ -1080,7 +1080,7 @@
 			}),
 			this.addEntry(dt + 'radio button off disabled focused light', function()
 			{
-				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;labelPosition=right;align=left;strokeColor=none;fillColor=#666666;opacity=10;');
+				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;strokeColor=none;fillColor=#666666;opacity=10;');
 				bg1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(16, 16, 16, 16), s2 + 'radiobutton;strokeColor=#B0B0B0;fillColor=none;strokeWidth=2;');
 				part1.vertex = true;
@@ -1095,7 +1095,7 @@
 			}),
 			this.addEntry(dt + 'radio button on disabled focused dark', function()
 			{
-				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;labelPosition=right;align=left;strokeColor=none;fillColor=#B0B0B0;opacity=10;');
+				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;strokeColor=none;fillColor=#B0B0B0;opacity=10;');
 				bg1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(16, 16, 16, 16), s2 + 'radiobutton;strokeColor=#676767;fillColor=#676767;strokeWidth=2;');
 				part1.vertex = true;
@@ -1110,7 +1110,7 @@
 			}),
 			this.addEntry(dt + 'radio button off focused pressed dark', function()
 			{
-				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;labelPosition=right;align=left;strokeColor=none;fillColor=#666666;opacity=10;');
+				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;strokeColor=none;fillColor=#666666;opacity=10;');
 				bg1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(16, 16, 16, 16), s2 + 'radiobutton;strokeColor=#ffffff;fillColor=none;strokeWidth=2;');
 				part1.vertex = true;
@@ -1125,7 +1125,7 @@
 			}),
 			this.addEntry(dt + 'radio button off disabled focused dark', function()
 			{
-				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;labelPosition=right;align=left;strokeColor=none;fillColor=#666666;opacity=10;');
+				var bg1 = new mxCell('', new mxGeometry(0, 0, 48, 48), 'shape=ellipse;strokeColor=none;fillColor=#666666;opacity=10;');
 				bg1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(16, 16, 16, 16), s2 + 'radiobutton;strokeColor=#666666;fillColor=none;strokeWidth=2;');
 				part1.vertex = true;
@@ -1164,25 +1164,25 @@
 	Sidebar.prototype.addGMDLSlidersPalette = function(expand)
 	{
 		var s = "dashed=0;shape=";
-		var s2 = "dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;shape=mxgraph.gmdl.";
+		var s2 = "dashed=0;shape=mxgraph.gmdl.";
 		var gn = 'mxgraph.gmdl';
 		var dt = 'gmdl google media design library slider ';
 		var sb = this;
 		
 		var fns = [
-			this.createVertexTemplateEntry(s2 + 'slider2;barPos=0;strokeColor=#bbbbbb;opacity=100;strokeWidth=2;handleSize=10;shadow=0;',
+			this.createVertexTemplateEntry(s2 + 'slider2;barPos=0;strokeColor=#bbbbbb;opacity=100;strokeWidth=2;fillColor=#ffffff;handleSize=10;shadow=0;',
 					200, 10, '', 'Slider (normal)', null, null, this.getTagsForStencil(gn, 'slider normal', dt).join(' ')),
 			this.createVertexTemplateEntry(s2 + 'slider2;barPos=50;strokeColor=#3F51B5;opacity=100;strokeWidth=2;fillColor=#3F51B5;handleSize=10;shadow=0;',
 					200, 10, '', 'Slider (normal)', null, null, this.getTagsForStencil(gn, 'slider normal', dt).join(' ')),
 			this.createVertexTemplateEntry(s2 + 'slider2;barPos=100;strokeColor=#3F51B5;opacity=100;strokeWidth=2;fillColor=#3F51B5;handleSize=10;shadow=0;',
 					200, 10, '', 'Slider (normal)', null, null, this.getTagsForStencil(gn, 'slider normal', dt).join(' ')),
-			this.createVertexTemplateEntry(s2 + 'sliderFocused;barPos=0;strokeColor=#bbbbbb;opacity=100;strokeWidth=2;handleSize=30;shadow=0;',
+			this.createVertexTemplateEntry(s2 + 'sliderFocused;barPos=0;strokeColor=#bbbbbb;opacity=100;strokeWidth=2;fillColor=#ffffff;handleSize=30;shadow=0;',
 					200, 30, '', 'Slider (focused)', null, null, this.getTagsForStencil(gn, 'slider focused', dt).join(' ')),
 			this.createVertexTemplateEntry(s2 + 'sliderFocused;barPos=50;strokeColor=#3F51B5;opacity=100;strokeWidth=2;fillColor=#3F51B5;handleSize=30;shadow=0;',
 					200, 30, '', 'Slider (focused)', null, null, this.getTagsForStencil(gn, 'slider focused', dt).join(' ')),
 			this.createVertexTemplateEntry(s2 + 'sliderFocused;barPos=100;strokeColor=#3F51B5;opacity=100;strokeWidth=2;fillColor=#3F51B5;handleSize=30;shadow=0;',
 					200, 30, '', 'Slider (focused)', null, null, this.getTagsForStencil(gn, 'slider focused', dt).join(' ')),
-			this.createVertexTemplateEntry(s2 + 'slider2;barPos=0;strokeColor=#bbbbbb;opacity=100;strokeWidth=2;handleSize=20;shadow=0;',
+			this.createVertexTemplateEntry(s2 + 'slider2;barPos=0;strokeColor=#bbbbbb;opacity=100;strokeWidth=2;fillColor=#ffffff;handleSize=20;shadow=0;',
 					200, 20, '', 'Slider (click)', null, null, this.getTagsForStencil(gn, 'slider click', dt).join(' ')),
 			this.createVertexTemplateEntry(s2 + 'slider2;barPos=50;strokeColor=#3F51B5;opacity=100;strokeWidth=2;fillColor=#3F51B5;handleSize=20;shadow=0;',
 					200, 20, '', 'Slider (click)', null, null, this.getTagsForStencil(gn, 'slider click', dt).join(' ')),
@@ -1194,7 +1194,7 @@
 					210, 20, '', 'Slider (disabled)', null, null, this.getTagsForStencil(gn, 'slider disabled', dt).join(' ')),
 			this.createVertexTemplateEntry(s2 + 'sliderDisabled2;strokeColor=#b0b0b0;strokeWidth=2;fillColor=#b0b0b0;handleSize=6;shadow=0;hPos=100;',
 					210, 20, '', 'Slider (disabled)', null, null, this.getTagsForStencil(gn, 'slider disabled', dt).join(' ')),
-			this.createVertexTemplateEntry(s2 + 'slider2;barPos=0;opacity=100;strokeWidth=2;fillColor=#000000;handleSize=10;shadow=0;',
+			this.createVertexTemplateEntry(s2 + 'slider2;barPos=0;strokeColor=#000000;opacity=100;strokeWidth=2;fillColor=#000000;handleSize=10;shadow=0;',
 					200, 10, '', 'Discrete slider (normal, light)', null, null, this.getTagsForStencil(gn, 'discrete slider normal light', dt).join(' ')),
 			this.createVertexTemplateEntry(s2 + 'slider2;barPos=60;strokeColor=#0F9D58;opacity=100;strokeWidth=2;fillColor=#0F9D58;handleSize=10;shadow=0;',
 					200, 10, '', 'Discrete slider (normal)', null, null, this.getTagsForStencil(gn, 'slider normal', dt).join(' ')),
@@ -1218,7 +1218,7 @@
 					200, 20, '', 'Discrete slider (disabled)', null, null, this.getTagsForStencil(gn, 'discrete slider disabled', dt).join(' ')),
 			this.createVertexTemplateEntry(s2 + 'sliderDisabled2;strokeColor=#b0b0b0;strokeWidth=2;fillColor=#b0b0b0;handleSize=6;shadow=0;hPos=100;',
 					200, 20, '', 'Discrete slider (disabled)', null, null, this.getTagsForStencil(gn, 'discrete slider disabled', dt).join(' ')),
-			this.createVertexTemplateEntry(s2 + 'slider2;barPos=0;strokeColor=#ffffff;opacity=100;strokeWidth=2;handleSize=10;shadow=0;',
+			this.createVertexTemplateEntry(s2 + 'slider2;barPos=0;strokeColor=#ffffff;opacity=100;strokeWidth=2;fillColor=#ffffff;handleSize=10;shadow=0;',
 					200, 10, '', 'Discrete slider (normal, dark)', null, null, this.getTagsForStencil(gn, 'discrete slider normal dark', dt).join(' ')),
 			this.createVertexTemplateEntry(s2 + 'sliderDiscreteDots;barPos=0;bright=0;strokeColor=#0F9D58;opacity=100;strokeWidth=2;fillColor=#0F9D58;handleSize=10;shadow=0;fontSize=12;fontColor=#ffffff;',
 					200, 45, '', 'Discrete slider (click, dark)', null, null, this.getTagsForStencil(gn, 'discrete slider click dark', dt).join(' ')),
@@ -1361,7 +1361,7 @@
 			}),
 			this.addEntry(dt + 'single line text field focus light', function()
 			{
-				var text1 = new mxCell('Input text', new mxGeometry(0, 0, 346, 30), 'text;fontSize=16;verticalAlign=middle;strokeColor=none;fillColor=none;');
+				var text1 = new mxCell('Input text', new mxGeometry(0, 0, 346, 30), 'text;fontColor=#000000;fontSize=16;verticalAlign=middle;strokeColor=none;fillColor=none;');
 				text1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(0, 25, 346, 10), s + 'line;strokeWidth=2;noLabel=1;strokeColor=#0C8CF2;opacity=50;');
 				part1.vertex = true;
@@ -1369,7 +1369,7 @@
 			}),
 			this.addEntry(dt + 'single line text field normal light', function()
 			{
-				var text1 = new mxCell('Input text', new mxGeometry(0, 0, 346, 30), 'text;fontSize=16;verticalAlign=middle;strokeColor=none;fillColor=none;');
+				var text1 = new mxCell('Input text', new mxGeometry(0, 0, 346, 30), 'text;fontColor=#000000;fontSize=16;verticalAlign=middle;strokeColor=none;fillColor=none;');
 				text1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(0, 25, 346, 10), s + 'line;strokeWidth=1;noLabel=1;strokeColor=#eeeeee;');
 				part1.vertex = true;
@@ -1377,7 +1377,7 @@
 			}),
 			this.addEntry(dt + 'single line text field error light', function()
 			{
-				var text1 = new mxCell('Input text', new mxGeometry(0, 0, 346, 30), 'text;fontSize=16;verticalAlign=middle;strokeColor=none;fillColor=none;');
+				var text1 = new mxCell('Input text', new mxGeometry(0, 0, 346, 30), 'text;fontColor=#000000;fontSize=16;verticalAlign=middle;strokeColor=none;fillColor=none;');
 				text1.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(0, 25, 346, 10), s + 'line;strokeWidth=2;noLabel=1;strokeColor=#ff0000;');
 				part1.vertex = true;
@@ -1444,7 +1444,7 @@
 			{
 				var text1 = new mxCell('Label text', new mxGeometry(0, 0, 346, 30), 'text;fontColor=#1F9BFD;fontSize=12;verticalAlign=middle;strokeColor=none;fillColor=none;');
 				text1.vertex = true;
-				var text2 = new mxCell('Input text', new mxGeometry(0, 20, 346, 30), 'text;fontSize=16;verticalAlign=middle;strokeColor=none;fillColor=none;');
+				var text2 = new mxCell('Input text', new mxGeometry(0, 20, 346, 30), 'text;fontColor=#000000;fontSize=16;verticalAlign=middle;strokeColor=none;fillColor=none;');
 				text2.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(0, 45, 346, 10), s + 'line;strokeWidth=2;noLabel=1;strokeColor=#1F9BFD;');
 				part1.vertex = true;
@@ -1454,7 +1454,7 @@
 			{
 				var text1 = new mxCell('Label text', new mxGeometry(0, 0, 346, 30), 'text;fontColor=#cccccc;fontSize=12;verticalAlign=middle;strokeColor=none;fillColor=none;');
 				text1.vertex = true;
-				var text2 = new mxCell('Input text', new mxGeometry(0, 20, 346, 30), 'text;fontSize=16;verticalAlign=middle;strokeColor=none;fillColor=none;');
+				var text2 = new mxCell('Input text', new mxGeometry(0, 20, 346, 30), 'text;fontColor=#000000;fontSize=16;verticalAlign=middle;strokeColor=none;fillColor=none;');
 				text2.vertex = true;
 				var part1 = new mxCell('', new mxGeometry(0, 45, 346, 10), s + 'line;strokeWidth=2;noLabel=1;strokeColor=#eeeeee;');
 				part1.vertex = true;

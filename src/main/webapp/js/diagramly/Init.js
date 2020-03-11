@@ -1,32 +1,17 @@
-/**
- * Copyright (c) 2006-2019, JGraph Ltd
- * Copyright (c) 2006-2019, draw.io AG
- */
-
 // urlParams is null when used for embedding
 window.urlParams = window.urlParams || {};
 
 // isLocalStorage controls access to local storage
 window.isLocalStorage = window.isLocalStorage || false;
 
-// Disables loading settings in configured mode
-window.mxLoadSettings = window.mxLoadSettings || urlParams['configure'] != '1';
-
 // Checks for SVG support
 window.isSvgBrowser = window.isSvgBrowser || (navigator.userAgent.indexOf('MSIE') < 0 || document.documentMode >= 9);
 
 // CUSTOM_PARAMETERS - URLs for save and export
 window.EXPORT_URL = window.EXPORT_URL || 'https://exp.draw.io/ImageExport4/export';
-window.PLANT_URL = window.PLANT_URL || 'https://exp-plant.draw.io/plantuml4';
-window.DRAW_MATH_URL = window.DRAW_MATH_URL || 'https://www.draw.io/math';
-window.VSD_CONVERT_URL = window.VSD_CONVERT_URL || "https://convert.draw.io/VsdConverter/api/converter";
-window.EMF_CONVERT_URL = window.EMF_CONVERT_URL || "https://convert.draw.io/emf2png/convertEMF";
-window.DRAWIO_GITLAB_URL = window.DRAWIO_GITLAB_URL || "https://gitlab.com";
-window.DRAWIO_GITLAB_ID = window.DRAWIO_GITLAB_ID || '5cdc018a32acddf6eba37592d9374945241e644b8368af847422d74c8709bc44';
 window.SAVE_URL = window.SAVE_URL || 'save';
 window.OPEN_URL = window.OPEN_URL || 'open';
 window.PROXY_URL = window.PROXY_URL || 'proxy';
-window.VIEWER_URL = null;
 
 // Paths and files
 window.SHAPES_PATH = window.SHAPES_PATH || 'shapes';
@@ -35,15 +20,10 @@ window.GRAPH_IMAGE_PATH = window.GRAPH_IMAGE_PATH || 'img';
 window.ICONSEARCH_PATH = window.ICONSEARCH_PATH || ((navigator.userAgent.indexOf('MSIE') >= 0 ||
 	urlParams['dev']) && window.location.protocol != 'file:' ? 'iconSearch' : 'https://www.draw.io/iconSearch');
 window.TEMPLATE_PATH = window.TEMPLATE_PATH || 'templates';
-window.NEW_DIAGRAM_CATS_PATH = window.NEW_DIAGRAM_CATS_PATH || 'newDiagramCats';
-window.PLUGINS_BASE_PATH = window.PLUGINS_BASE_PATH || '';
 
 // Directory for i18 files and basename for main i18n file
 window.RESOURCES_PATH = window.RESOURCES_PATH || 'resources';
 window.RESOURCE_BASE = window.RESOURCE_BASE || RESOURCES_PATH + '/dia';
-
-// Specifies global configuration via variable
-window.DRAWIO_CONFIG = window.DRAWIO_CONFIG || null;
 
 // Sets the base path, the UI language via URL param and configures the
 // supported languages to avoid 404s. The loading of all core language
@@ -86,46 +66,52 @@ window.mxLanguage = window.mxLanguage || (function()
 
 // Add new languages here. First entry is translated to [Automatic]
 // in the menu defintion in Diagramly.js.
+// window.mxLanguageMap = window.mxLanguageMap ||
+// {
+// 	'i18n': '',
+// 	'id' : 'Bahasa Indonesia',
+// 	'ms' : 'Bahasa Melayu',
+// 	'bs' : 'Bosanski',
+// 	'bg' : 'Bulgarian',
+// 	'ca' : 'Català',
+// 	'cs' : 'Čeština',
+// 	'da' : 'Dansk',
+// 	'de' : 'Deutsch',
+// 	'et' : 'Eesti',
+// 	'en' : 'English',
+// 	'es' : 'Español',
+// 	'fil' : 'Filipino',
+// 	'fr' : 'Français',
+// 	'it' : 'Italiano',
+// 	'hu' : 'Magyar',
+// 	'nl' : 'Nederlands',
+// 	'no' : 'Norsk',
+// 	'pl' : 'Polski',
+// 	'pt-br' : 'Português (Brasil)',
+// 	'pt' : 'Português (Portugal)',
+// 	'ro' : 'Română',
+// 	'fi' : 'Suomi',
+// 	'sv' : 'Svenska',
+// 	'vi' : 'Tiếng Việt',
+// 	'tr' : 'Türkçe',
+// 	'el' : 'Ελληνικά',
+// 	'ru' : 'Русский',
+// 	'sr' : 'Српски',
+// 	'uk' : 'Українська',
+// 	'he' : 'עברית',
+// 	'ar' : 'العربية',
+// 	'th' : 'ไทย',
+// 	'ko' : '한국어',
+// 	'ja' : '日本語',
+// 	'zh' : '中文（中国）',
+// 	'zh-tw' : '中文（台灣）'
+// };
+
 window.mxLanguageMap = window.mxLanguageMap ||
-{
-	'i18n': '',
-	'id' : 'Bahasa Indonesia',
-	'ms' : 'Bahasa Melayu',
-	'bs' : 'Bosanski',
-	'bg' : 'Bulgarian',
-	'ca' : 'Català',
-	'cs' : 'Čeština',
-	'da' : 'Dansk',
-	'de' : 'Deutsch',
-	'et' : 'Eesti',
-	'en' : 'English',
-	'es' : 'Español',
-	'fil' : 'Filipino',
-	'fr' : 'Français',
-	'it' : 'Italiano',
-	'hu' : 'Magyar',
-	'nl' : 'Nederlands',
-	'no' : 'Norsk',
-	'pl' : 'Polski',
-	'pt-br' : 'Português (Brasil)',
-	'pt' : 'Português (Portugal)',
-	'ro' : 'Română',
-	'fi' : 'Suomi',
-	'sv' : 'Svenska',
-	'vi' : 'Tiếng Việt',
-	'tr' : 'Türkçe',
-	'el' : 'Ελληνικά',
-	'ru' : 'Русский',
-	'sr' : 'Српски',
-	'uk' : 'Українська',
-	'he' : 'עברית',
-	'ar' : 'العربية',
-	'th' : 'ไทย',
-	'ko' : '한국어',
-	'ja' : '日本語',
-	'zh' : '简体中文',
-	'zh-tw' : '繁體中文'
-};
+    {
+        'zh' : '中文（中国）',
+       /* 'en' : 'English',*/
+    };
 
 if (typeof window.mxBasePath === 'undefined')
 {
@@ -154,7 +140,7 @@ if (window.mxLanguages == null)
 window.uiTheme = window.uiTheme || (function() 
 {
 	var ui = urlParams['ui'];
-
+	
 	// Known issue: No JSON object at this point in quirks in IE8
 	if (ui == null && typeof JSON !== 'undefined')
 	{
@@ -177,24 +163,6 @@ window.uiTheme = window.uiTheme || (function()
 				isLocalStorage = false;
 			}
 		}
-	}
-	
-	// Uses minimal theme on small screens
-	try
-	{
-		if (ui == null)
-		{
-	        var iw = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-	        if (iw <= 414)
-	        {
-	        	ui = 'min';
-	        }
-		}
-	}
-	catch (e)
-	{
-		// ignore
 	}
 	
 	return ui;
@@ -250,36 +218,12 @@ function setCurrentXml(data, filename)
 
 	if (ex != null)
 	{
-		ex = decodeURIComponent(ex);
-		
 		if (ex.substring(0, 7) != 'http://' &&  ex.substring(0, 8) != 'https://')
 		{
 			ex = 'http://' + ex;
 		}
 		
 		EXPORT_URL = ex;
-	}
-
-	// Customizes gitlab URL
-	var glUrl = urlParams['gitlab'];
-
-	if (glUrl != null)
-	{
-		glUrl = decodeURIComponent(glUrl);
-		
-		if (glUrl.substring(0, 7) != 'http://' &&  glUrl.substring(0, 8) != 'https://')
-		{
-			glUrl = 'http://' + glUrl;
-		}
-		
-		DRAWIO_GITLAB_URL = glUrl;
-	}
-	
-	var glId = urlParams['gitlab-id'];
-
-	if (glId != null)
-	{
-		DRAWIO_GITLAB_ID = glId;
 	}
 
 	// URL for logging
@@ -304,12 +248,12 @@ function setCurrentXml(data, filename)
 // Enables offline mode
 if (urlParams['offline'] == '1' || urlParams['demo'] == '1' || urlParams['stealth'] == '1' || urlParams['local'] == '1')
 {
+	urlParams['analytics'] = '0';
 	urlParams['picker'] = '0';
 	urlParams['gapi'] = '0';
 	urlParams['db'] = '0';
 	urlParams['od'] = '0';
 	urlParams['gh'] = '0';
-	urlParams['gl'] = '0';
 	urlParams['tr'] = '0';
 }
 
@@ -319,15 +263,8 @@ if (urlParams['offline'] == '1' || urlParams['local'] == '1')
 	urlParams['math'] = '0';
 }
 
-// Lightbox enables chromeless mode
+// Lightbox enabled chromeless mode
 if (urlParams['lightbox'] == '1')
 {
 	urlParams['chrome'] = '0';
-}
-
-// Fallback for cases where the hash property is not available
-if ((window.location.hash == null || window.location.hash.length <= 1) &&
-	urlParams['open'] != null)
-{
-	window.location.hash = urlParams['open'];
 }
